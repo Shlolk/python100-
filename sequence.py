@@ -40,5 +40,9 @@ name,age,job= developer
 print(name)#shlok
 print(age)#21
 print(job)#rust developer 
-
+#if you want to print the one element and print rest as it is you can use * ashstrack symbol for that ....
+developer = ['shlok', 21, 'Rust Developer']
+name, *rest = developer
+print(name) # 'shlok'
+print(rest) # [21, 'Rust Developer']
 
