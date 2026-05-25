@@ -49,3 +49,8 @@ print(rest) # [21, 'Rust Developer']
 numbers = [1, 2, 3, 4, 5]
 numbers.append(6)
 print(numbers) # [1, 2, 3, 4, 5, 6] 
+#If you want to add one list at the end of another, you can also use the append() method like this:
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [6, 8, 10]
+numbers.append(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
