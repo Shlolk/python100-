@@ -59,3 +59,11 @@ numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 numbers.extend(even_numbers)
 print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10] so this is the output 
+"""
+To insert an element at a specific index in a list, you can use 
+the insert() method. This method accepts two arguments: the index where you
+wish to insert the new item and the item you want to insert."""
+
+numbers = [1, 2, 3, 4, 5]
+numbers.insert(2, 2.5)
+print(numbers) # [1, 2, 2.5, 3, 4, 5]
