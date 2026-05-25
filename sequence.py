@@ -45,4 +45,7 @@ developer = ['shlok', 21, 'Rust Developer']
 name, *rest = developer
 print(name) # 'shlok'
 print(rest) # [21, 'Rust Developer']
-
+#how to append the list with the help of append() method
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers) # [1, 2, 3, 4, 5, 6] 
