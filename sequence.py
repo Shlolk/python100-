@@ -58,4 +58,4 @@ print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 numbers.extend(even_numbers)
-print(numbers)
+print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10] so this is the output 
