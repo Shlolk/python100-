@@ -25,3 +25,20 @@ print(tuple1)
 set1={10,20,30,40,50} #set is a collection of items which are unordered and unchangeable. It does not allow duplicate members.
 print(set1)
 
+#nested list : list inside list 
+developer= ['shlok',21,['c++','rust','pyhton']]
+print(developer[2])#here the ouput will be ['c++','rust','python']
+# in the nested list you can see that index start with 0 so shlok is zero intex , 21 is 1 index ,and the another list in side list is carry the indx no 3 
+# if you want to acces the one element from the nested list so we can do this 
+developer = ['shlok', 21, ['Python', 'Rust', 'C++']]
+developer[2][1] # 'rust'
+#Unpacking values from a list is a technique used to assign values
+#from a list to new variables. Here is an example of unpacking a
+#developer list into new variables called name, age an
+developer = ['shlok', 21,'rust developer']
+name,age,job= developer 
+print(name)#shlok
+print(age)#21
+print(job)#rust developer 
+
+
