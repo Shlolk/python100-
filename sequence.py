@@ -67,3 +67,6 @@ wish to insert the new item and the item you want to insert."""
 numbers = [1, 2, 3, 4, 5]
 numbers.insert(2, 2.5)
 print(numbers) # [1, 2, 2.5, 3, 4, 5]
+#Another way to create a tuple is by using the tuple() constructor like this:
+developer = 'Shlok'
+tuple(developer) # ('S','h','l','o','k')
