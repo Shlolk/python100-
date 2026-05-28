@@ -70,3 +70,8 @@ print(numbers) # [1, 2, 2.5, 3, 4, 5]
 #Another way to create a tuple is by using the tuple() constructor like this:
 developer = 'Shlok'
 tuple(developer) # ('S','h','l','o','k')
+programing_language=('python','c++','rust')
+'rust' in programing_language #True
+'java' in programing_language #False
+
+
