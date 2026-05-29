@@ -79,5 +79,9 @@ print(even_numbers) #here we print the list
 #their is another way to do that and this is very consise..
 even_numbers = [num for num in range(21) if num % 2 == 0]
 print(even_numbers) #this method is called list Comprehensions...
+#another example 
+number=[1,2,3,4,5]
+result=[(num,'even') if num%2==0 else (num,'odd') for num in numbers]
+print(result) #output:[(1, 'Odd'), (2, 'Even'), (3, 'Odd'), (4, 'Even'), (5, 'Odd')]
 
 
