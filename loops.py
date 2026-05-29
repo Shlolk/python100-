@@ -34,4 +34,20 @@ gusse=0
           print("worng gusses")
 
 print("you got it..... ")
-          
+"""
+if you wanted to keep track of the index for each element? Well,
+one option is to create an index variable and increment it by 1 
+    for each iteration of the loop, like this:
+"""
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+
+index = 0
+
+for language in languages:
+    print(f'Index {index} and language {language}')
+    index += 1         
+#this method is good but we can do this with more better way with the help of enumerate()
+# The enumerate() function keeps track of the index for an iterable and returns an enumerate object.
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+list(enumerate(languages))
+# [(0, 'Spanish'), (1, 'English'), (2, 'Russian'), (3, 'Chinese')]
