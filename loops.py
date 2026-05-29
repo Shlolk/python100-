@@ -63,4 +63,21 @@ for name, id in zip(developers, ids):
     print(f'Name: {name}')
     print(f'ID: {id}')
 
+#here is example of using loop or if condition to check whather the number is even or not
+even_numbers = []
+for num in range(21):  #here the no will be 0 to 20.
+    if num % 2 == 0:   #this condition check wather  the number is even or not 
+        even_numbers.append(num) #if the conditon is true even_numbers list
+
+print(even_numbers) #here we print the list 
+'''problem of the first code is 
+1.create the empty list 
+2.crate loop 
+3.crete the condition for checking wheather no is  event or not 
+4.if true print the list     
+'''
+#their is another way to do that and this is very consise..
+even_numbers = [num for num in range(21) if num % 2 == 0]
+print(even_numbers) #this method is called list Comprehensions...
+
 
