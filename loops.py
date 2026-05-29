@@ -55,4 +55,12 @@ list(enumerate(languages))
 code_busters=['shlok','adiba' ,'krishna','sachin','yessia']
 postion=['fullstack','frontend','frontend','database','frontend']
 print(zip(code_busters,postion))
+#anothe example zip with for loop 
+developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+ids = [1, 2, 3, 4]
+
+for name, id in zip(developers, ids):
+    print(f'Name: {name}')
+    print(f'ID: {id}')
+
 
