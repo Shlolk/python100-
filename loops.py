@@ -83,5 +83,12 @@ print(even_numbers) #this method is called list Comprehensions...
 number=[1,2,3,4,5]
 result=[(num,'even') if num%2==0 else (num,'odd') for num in numbers]
 print(result) #output:[(1, 'Odd'), (2, 'Even'), (3, 'Odd'), (4, 'Even'), (5, 'Odd')]
+#filter() use to extarct the what ever element we want ot exract in the list...
+words=['tree','sky','mountain','water','cloud']
+def is_long_word(word):
+    return len(word) > 4
+
+longwords=list(filter(is_long_word,word))
+print(longwords) # ['mountain', 'river', 'cloud']
 
 
