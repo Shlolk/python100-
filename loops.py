@@ -51,3 +51,8 @@ for language in languages:
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 list(enumerate(languages))
 # [(0, 'Spanish'), (1, 'English'), (2, 'Russian'), (3, 'Chinese')]
+#zip() function that make a pair of two different lists of same position of elements
+code_busters=['shlok','adiba' ,'krishna','sachin','yessia']
+postion=['fullstack','frontend','frontend','database','frontend']
+print(zip(code_busters,postion))
+
