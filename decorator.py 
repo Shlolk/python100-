@@ -1,12 +1,39 @@
+# Step 1: Define a decorator function named 'logger'.
+# A decorator is used to add extra functionality to another function
+# without modifying its original code.
 def logger(func):
+
+    # Step 2: Define an inner function called 'wrapper'.
+    # This function will execute before and after the original function.
     def wrapper():
+
+        # Code to run before the original function.
         print("Function started")
+
+        # Call the original function passed to the decorator.
         func()
+
+        # Code to run after the original function.
         print("Function ended")
+
+    # Return the wrapper function instead of the original function.
     return wrapper
 
+
+# Step 3: Apply the decorator to the 'display' function.
+# '@logger' is equivalent to writing:
+# display = logger(display)
 @logger
 def display():
+
+    # Original functionality of the function.
     print("Hello!")
 
-display() 
+
+# Step 4: Call the decorated function.
+# Execution flow:
+# 1. wrapper() starts.
+# 2. Prints "Function started".
+# 3. Calls display(), which prints "Hello!".
+# 4. Prints "Function ended".
+display()
