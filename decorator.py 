@@ -1,4 +1,4 @@
-# Step 1: Define a decorator function named 'logger'.
+q# Step 1: Define a decorator function named 'logger'.
 # A decorator is used to add extra functionality to another function
 # without modifying its original code.
 def logger(func):
@@ -28,7 +28,31 @@ def display():
 
     # Original functionality of the function.
     print("Hello!")
+import time
 
+def calculate_time(func):
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+
+        result = func(*args, **kwargs)
+
+        end = time.perf_counter()
+        print(f"{func.__name__} executed in {end - start:.6f} seconds")
+
+        return result
+    return wrapper
+
+
+@calculate_time
+def find_sum(n):
+    total = 0
+    for i in range(n):
+        total += i
+    return total
+
+
+answer = find_sum(1000000)
+print("Sum =", answer)
 
 # Step 4: Call the decorated function.
 # Execution flow:
