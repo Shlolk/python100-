@@ -5,3 +5,8 @@ def add(a: int, b: int) -> int:
 
 result = add(10, 20)
 print(result)
+#this function returns the string value 
+def greet(name:str)-> str:
+    return f" hello {name} !"
+greet("shlok")
+print(greet)
