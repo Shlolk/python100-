@@ -6,3 +6,6 @@ print(type(arr))
 #cretaing the 2d array with the help of numpy 
 arr2= np.array([[1,4,7],[2,3,5]])
 print(arr2)
+#creating the array for zeros 
+arr3= np.zero((3,4)) #3 means rows and 4 menas column
+print(arr3)
